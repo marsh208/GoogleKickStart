@@ -1,7 +1,7 @@
 import java.util.*;
 import java.io.*;
 
-class  CheapHouseCalc {
+class  Solution {
 
   public static void main(String args[]) throws IOException
   {
@@ -19,7 +19,6 @@ class  CheapHouseCalc {
 
     File file = new File("input.txt");
 
-    System.out.println("Hey");
 
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 

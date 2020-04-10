@@ -1,7 +1,7 @@
 import java.util.*;
 import java.io.*;
 
-class  EasiestDifficulty {
+class  Solution {
 
   public static void main(String args[]) throws IOException
   {
@@ -18,12 +18,6 @@ class  EasiestDifficulty {
     String line2;
 
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-    //
-    // OutputStream os = new FileOutputStream("output.txt");
-    // Writer writer = new OutputStreamWriter(os,"UTF-8");
-    // writer=new BufferedWriter(writer);
-
-
 
     //number of test cases
     numTestCases = Integer.parseInt(br.readLine());
@@ -58,7 +52,6 @@ class  EasiestDifficulty {
 
       maxDifficulty = findMaxDiff(newTimes);
 
-      // writer.write()
       System.out.println("Case #" + caseNumber + ": " + maxDifficulty);
     }
   }
@@ -103,7 +96,6 @@ class  EasiestDifficulty {
       }
 
       newLength = biggestGap / 2;
-      // System.out.println("New length: " + newLength);
       times.add(biggestGapIndex+1, times.get(biggestGapIndex) + newLength);
       xtraSessions--;
       biggestGap = 1;
