@@ -19,7 +19,9 @@ class  CheapHouseCalc {
 
     File file = new File("input.txt");
 
-    BufferedReader br = new BufferedReader(new FileReader(file));
+    System.out.println("Hey");
+
+    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
     //number of test cases
     numTestCases = Integer.parseInt(br.readLine());
